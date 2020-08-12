@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="10f2f140-0ae3-4269-a7ed-33be41aba833" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost/ucsheservice/ucshservice.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="UCSHService1.disco" MetadataType="Disco" ID="c0731f90-eee9-4887-8dcf-f491585e2013" SourceId="1" SourceUrl="http://localhost/UCSHEService/UCSHService.svc?disco" />
+    <MetadataFile FileName="UCSHService4.xsd" MetadataType="Schema" ID="2e34651c-9f6f-4185-816b-7193083e1ae6" SourceId="1" SourceUrl="http://localhost/UCSHEService/UCSHService.svc?xsd=xsd1" />
+    <MetadataFile FileName="UCSHService41.xsd" MetadataType="Schema" ID="48b39904-4822-4ccd-863c-841a863f1b85" SourceId="1" SourceUrl="http://localhost/UCSHEService/UCSHService.svc?xsd=xsd0" />
+    <MetadataFile FileName="UCSHService42.xsd" MetadataType="Schema" ID="06382a5c-128e-4908-ae27-86e93767c75b" SourceId="1" SourceUrl="http://localhost/UCSHEService/UCSHService.svc?xsd=xsd3" />
+    <MetadataFile FileName="UCSHService43.xsd" MetadataType="Schema" ID="b175175d-78bf-426f-80aa-046c2fa838c8" SourceId="1" SourceUrl="http://localhost/UCSHEService/UCSHService.svc?xsd=xsd2" />
+    <MetadataFile FileName="UCSHService1.wsdl" MetadataType="Wsdl" ID="16630ef7-de4f-4990-a0a5-e17cfbb8bc08" SourceId="1" SourceUrl="http://localhost/UCSHEService/UCSHService.svc?wsdl" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

@@ -1,0 +1,1389 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="UCSHService" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost/UCSHEService/UCSHService.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost/UCSHEService/UCSHService.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost/UCSHEService/UCSHService.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/" />
+      <xsd:import schemaLocation="http://localhost/UCSHEService/UCSHService.svc?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/System.Data" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IUCSHService_GetAuditLog_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAuditLog" />
+  </wsdl:message>
+  <wsdl:message name="IUCSHService_GetAuditLog_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAuditLogResponse" />
+  </wsdl:message>
+  <wsdl:message name="IUCSHService_GetApproveType_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetApproveType" />
+  </wsdl:message>
+  <wsdl:message name="IUCSHService_GetApproveType_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetApproveTypeResponse" />
+  </wsdl:message>
+  <wsdl:message name="IUCSHService_GetMajor_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetMajor" />
+  </wsdl:message>
+  <wsdl:message name="IUCSHService_GetMajor_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetMajorResponse" />
+  </wsdl:message>
+  <wsdl:message name="IUCSHService_GetSemester_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetSemester" />
+  </wsdl:message>
+  <wsdl:message name="IUCSHService_GetSemester_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetSemesterResponse" />
+  </wsdl:message>
+  <wsdl:message name="IUCSHService_GetAttendanceStatus_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAttendanceStatus" />
+  </wsdl:message>
+  <wsdl:message name="IUCSHService_GetAttendanceStatus_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAttendanceStatusResponse" />
+  </wsdl:message>
+  <wsdl:message name="IUCSHService_GetAuthentication_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAuthentication" />
+  </wsdl:message>
+  <wsdl:message name="IUCSHService_GetAuthentication_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAuthenticationResponse" />
+  </wsdl:message>
+  <wsdl:message name="IUCSHService_GetClass_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetClass" />
+  </wsdl:message>
+  <wsdl:message name="IUCSHService_GetClass_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetClassResponse" />
+  </wsdl:message>
+  <wsdl:message name="IUCSHService_GetDailyAttadance_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetDailyAttadance" />
+  </wsdl:message>
+  <wsdl:message name="IUCSHService_GetDailyAttadance_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetDailyAttadanceResponse" />
+  </wsdl:message>
+  <wsdl:message name="IUCSHService_GetDayInWeek_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetDayInWeek" />
+  </wsdl:message>
+  <wsdl:message name="IUCSHService_GetDayInWeek_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetDayInWeekResponse" />
+  </wsdl:message>
+  <wsdl:message name="IUCSHService_GetDepartment_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetDepartment" />
+  </wsdl:message>
+  <wsdl:message name="IUCSHService_GetDepartment_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetDepartmentResponse" />
+  </wsdl:message>
+  <wsdl:message name="IUCSHService_GetDivision_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetDivision" />
+  </wsdl:message>
+  <wsdl:message name="IUCSHService_GetDivision_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetDivisionResponse" />
+  </wsdl:message>
+  <wsdl:message name="IUCSHService_GetHolidayType_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetHolidayType" />
+  </wsdl:message>
+  <wsdl:message name="IUCSHService_GetHolidayType_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetHolidayTypeResponse" />
+  </wsdl:message>
+  <wsdl:message name="IUCSHService_GetHolidaySchedule_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetHolidaySchedule" />
+  </wsdl:message>
+  <wsdl:message name="IUCSHService_GetHolidaySchedule_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetHolidayScheduleResponse" />
+  </wsdl:message>
+  <wsdl:message name="IUCSHService_GetMember_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetMember" />
+  </wsdl:message>
+  <wsdl:message name="IUCSHService_GetMember_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetMemberResponse" />
+  </wsdl:message>
+  <wsdl:message name="IUCSHService_GetMemberPermission_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetMemberPermission" />
+  </wsdl:message>
+  <wsdl:message name="IUCSHService_GetMemberPermission_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetMemberPermissionResponse" />
+  </wsdl:message>
+  <wsdl:message name="IUCSHService_GetMemberRole_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetMemberRole" />
+  </wsdl:message>
+  <wsdl:message name="IUCSHService_GetMemberRole_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetMemberRoleResponse" />
+  </wsdl:message>
+  <wsdl:message name="IUCSHService_GetMonthlyAttadance_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetMonthlyAttadance" />
+  </wsdl:message>
+  <wsdl:message name="IUCSHService_GetMonthlyAttadance_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetMonthlyAttadanceResponse" />
+  </wsdl:message>
+  <wsdl:message name="IUCSHService_GetPermissionMaster_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetPermissionMaster" />
+  </wsdl:message>
+  <wsdl:message name="IUCSHService_GetPermissionMaster_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetPermissionMasterResponse" />
+  </wsdl:message>
+  <wsdl:message name="IUCSHService_GetRequestList_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetRequestList" />
+  </wsdl:message>
+  <wsdl:message name="IUCSHService_GetRequestList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetRequestListResponse" />
+  </wsdl:message>
+  <wsdl:message name="IUCSHService_GetRoom_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetRoom" />
+  </wsdl:message>
+  <wsdl:message name="IUCSHService_GetRoom_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetRoomResponse" />
+  </wsdl:message>
+  <wsdl:message name="IUCSHService_GetServiceAccessRight_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetServiceAccessRight" />
+  </wsdl:message>
+  <wsdl:message name="IUCSHService_GetServiceAccessRight_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetServiceAccessRightResponse" />
+  </wsdl:message>
+  <wsdl:message name="IUCSHService_GetStudent_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetStudent" />
+  </wsdl:message>
+  <wsdl:message name="IUCSHService_GetStudent_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetStudentResponse" />
+  </wsdl:message>
+  <wsdl:message name="IUCSHService_GetSubject_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetSubject" />
+  </wsdl:message>
+  <wsdl:message name="IUCSHService_GetSubject_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetSubjectResponse" />
+  </wsdl:message>
+  <wsdl:message name="IUCSHService_GetSubjectType_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetSubjectType" />
+  </wsdl:message>
+  <wsdl:message name="IUCSHService_GetSubjectType_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetSubjectTypeResponse" />
+  </wsdl:message>
+  <wsdl:message name="IUCSHService_GetTeacher_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetTeacher" />
+  </wsdl:message>
+  <wsdl:message name="IUCSHService_GetTeacher_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetTeacherResponse" />
+  </wsdl:message>
+  <wsdl:message name="IUCSHService_GetTimePeriod_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetTimePeriod" />
+  </wsdl:message>
+  <wsdl:message name="IUCSHService_GetTimePeriod_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetTimePeriodResponse" />
+  </wsdl:message>
+  <wsdl:message name="IUCSHService_GetTimeTableObject_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetTimeTableObject" />
+  </wsdl:message>
+  <wsdl:message name="IUCSHService_GetTimeTableObject_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetTimeTableObjectResponse" />
+  </wsdl:message>
+  <wsdl:message name="IUCSHService_GetTownship_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetTownship" />
+  </wsdl:message>
+  <wsdl:message name="IUCSHService_GetTownship_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetTownshipResponse" />
+  </wsdl:message>
+  <wsdl:message name="IUCSHService_GetUnabilableApproveList_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetUnabilableApproveList" />
+  </wsdl:message>
+  <wsdl:message name="IUCSHService_GetUnabilableApproveList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetUnabilableApproveListResponse" />
+  </wsdl:message>
+  <wsdl:message name="IUCSHService_GetUniversity_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetUniversity" />
+  </wsdl:message>
+  <wsdl:message name="IUCSHService_GetUniversity_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetUniversityResponse" />
+  </wsdl:message>
+  <wsdl:message name="IUCSHService_GetYearlyAttadance_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetYearlyAttadance" />
+  </wsdl:message>
+  <wsdl:message name="IUCSHService_GetYearlyAttadance_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetYearlyAttadanceResponse" />
+  </wsdl:message>
+  <wsdl:message name="IUCSHService_GetYears_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetYears" />
+  </wsdl:message>
+  <wsdl:message name="IUCSHService_GetYears_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetYearsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IUCSHService_WriteDivision_InputMessage">
+    <wsdl:part name="parameters" element="tns:WriteDivision" />
+  </wsdl:message>
+  <wsdl:message name="IUCSHService_WriteDivision_OutputMessage">
+    <wsdl:part name="parameters" element="tns:WriteDivisionResponse" />
+  </wsdl:message>
+  <wsdl:message name="IUCSHService_WriteMajor_InputMessage">
+    <wsdl:part name="parameters" element="tns:WriteMajor" />
+  </wsdl:message>
+  <wsdl:message name="IUCSHService_WriteMajor_OutputMessage">
+    <wsdl:part name="parameters" element="tns:WriteMajorResponse" />
+  </wsdl:message>
+  <wsdl:message name="IUCSHService_WriteMemberRole_InputMessage">
+    <wsdl:part name="parameters" element="tns:WriteMemberRole" />
+  </wsdl:message>
+  <wsdl:message name="IUCSHService_WriteMemberRole_OutputMessage">
+    <wsdl:part name="parameters" element="tns:WriteMemberRoleResponse" />
+  </wsdl:message>
+  <wsdl:message name="IUCSHService_WriteMember_InputMessage">
+    <wsdl:part name="parameters" element="tns:WriteMember" />
+  </wsdl:message>
+  <wsdl:message name="IUCSHService_WriteMember_OutputMessage">
+    <wsdl:part name="parameters" element="tns:WriteMemberResponse" />
+  </wsdl:message>
+  <wsdl:message name="IUCSHService_WriteMemberPermission_InputMessage">
+    <wsdl:part name="parameters" element="tns:WriteMemberPermission" />
+  </wsdl:message>
+  <wsdl:message name="IUCSHService_WriteMemberPermission_OutputMessage">
+    <wsdl:part name="parameters" element="tns:WriteMemberPermissionResponse" />
+  </wsdl:message>
+  <wsdl:message name="IUCSHService_WriteApproveType_InputMessage">
+    <wsdl:part name="parameters" element="tns:WriteApproveType" />
+  </wsdl:message>
+  <wsdl:message name="IUCSHService_WriteApproveType_OutputMessage">
+    <wsdl:part name="parameters" element="tns:WriteApproveTypeResponse" />
+  </wsdl:message>
+  <wsdl:message name="IUCSHService_WriteAttendanceStatus_InputMessage">
+    <wsdl:part name="parameters" element="tns:WriteAttendanceStatus" />
+  </wsdl:message>
+  <wsdl:message name="IUCSHService_WriteAttendanceStatus_OutputMessage">
+    <wsdl:part name="parameters" element="tns:WriteAttendanceStatusResponse" />
+  </wsdl:message>
+  <wsdl:message name="IUCSHService_WriteAuthentication_InputMessage">
+    <wsdl:part name="parameters" element="tns:WriteAuthentication" />
+  </wsdl:message>
+  <wsdl:message name="IUCSHService_WriteAuthentication_OutputMessage">
+    <wsdl:part name="parameters" element="tns:WriteAuthenticationResponse" />
+  </wsdl:message>
+  <wsdl:message name="IUCSHService_WriteClass_InputMessage">
+    <wsdl:part name="parameters" element="tns:WriteClass" />
+  </wsdl:message>
+  <wsdl:message name="IUCSHService_WriteClass_OutputMessage">
+    <wsdl:part name="parameters" element="tns:WriteClassResponse" />
+  </wsdl:message>
+  <wsdl:message name="IUCSHService_WriteDailyAttadance_InputMessage">
+    <wsdl:part name="parameters" element="tns:WriteDailyAttadance" />
+  </wsdl:message>
+  <wsdl:message name="IUCSHService_WriteDailyAttadance_OutputMessage">
+    <wsdl:part name="parameters" element="tns:WriteDailyAttadanceResponse" />
+  </wsdl:message>
+  <wsdl:message name="IUCSHService_WriteDayInWeek_InputMessage">
+    <wsdl:part name="parameters" element="tns:WriteDayInWeek" />
+  </wsdl:message>
+  <wsdl:message name="IUCSHService_WriteDayInWeek_OutputMessage">
+    <wsdl:part name="parameters" element="tns:WriteDayInWeekResponse" />
+  </wsdl:message>
+  <wsdl:message name="IUCSHService_WriteDepartment_InputMessage">
+    <wsdl:part name="parameters" element="tns:WriteDepartment" />
+  </wsdl:message>
+  <wsdl:message name="IUCSHService_WriteDepartment_OutputMessage">
+    <wsdl:part name="parameters" element="tns:WriteDepartmentResponse" />
+  </wsdl:message>
+  <wsdl:message name="IUCSHService_WriteHolidayType_InputMessage">
+    <wsdl:part name="parameters" element="tns:WriteHolidayType" />
+  </wsdl:message>
+  <wsdl:message name="IUCSHService_WriteHolidayType_OutputMessage">
+    <wsdl:part name="parameters" element="tns:WriteHolidayTypeResponse" />
+  </wsdl:message>
+  <wsdl:message name="IUCSHService_WriteMonthlyAttadance_InputMessage">
+    <wsdl:part name="parameters" element="tns:WriteMonthlyAttadance" />
+  </wsdl:message>
+  <wsdl:message name="IUCSHService_WriteMonthlyAttadance_OutputMessage">
+    <wsdl:part name="parameters" element="tns:WriteMonthlyAttadanceResponse" />
+  </wsdl:message>
+  <wsdl:message name="IUCSHService_WritePermissionMaster_InputMessage">
+    <wsdl:part name="parameters" element="tns:WritePermissionMaster" />
+  </wsdl:message>
+  <wsdl:message name="IUCSHService_WritePermissionMaster_OutputMessage">
+    <wsdl:part name="parameters" element="tns:WritePermissionMasterResponse" />
+  </wsdl:message>
+  <wsdl:message name="IUCSHService_WriteRequestList_InputMessage">
+    <wsdl:part name="parameters" element="tns:WriteRequestList" />
+  </wsdl:message>
+  <wsdl:message name="IUCSHService_WriteRequestList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:WriteRequestListResponse" />
+  </wsdl:message>
+  <wsdl:message name="IUCSHService_WriteRoom_InputMessage">
+    <wsdl:part name="parameters" element="tns:WriteRoom" />
+  </wsdl:message>
+  <wsdl:message name="IUCSHService_WriteRoom_OutputMessage">
+    <wsdl:part name="parameters" element="tns:WriteRoomResponse" />
+  </wsdl:message>
+  <wsdl:message name="IUCSHService_WriteStudent_InputMessage">
+    <wsdl:part name="parameters" element="tns:WriteStudent" />
+  </wsdl:message>
+  <wsdl:message name="IUCSHService_WriteStudent_OutputMessage">
+    <wsdl:part name="parameters" element="tns:WriteStudentResponse" />
+  </wsdl:message>
+  <wsdl:message name="IUCSHService_WriteSubject_InputMessage">
+    <wsdl:part name="parameters" element="tns:WriteSubject" />
+  </wsdl:message>
+  <wsdl:message name="IUCSHService_WriteSubject_OutputMessage">
+    <wsdl:part name="parameters" element="tns:WriteSubjectResponse" />
+  </wsdl:message>
+  <wsdl:message name="IUCSHService_WriteSubjectType_InputMessage">
+    <wsdl:part name="parameters" element="tns:WriteSubjectType" />
+  </wsdl:message>
+  <wsdl:message name="IUCSHService_WriteSubjectType_OutputMessage">
+    <wsdl:part name="parameters" element="tns:WriteSubjectTypeResponse" />
+  </wsdl:message>
+  <wsdl:message name="IUCSHService_WriteTeacher_InputMessage">
+    <wsdl:part name="parameters" element="tns:WriteTeacher" />
+  </wsdl:message>
+  <wsdl:message name="IUCSHService_WriteTeacher_OutputMessage">
+    <wsdl:part name="parameters" element="tns:WriteTeacherResponse" />
+  </wsdl:message>
+  <wsdl:message name="IUCSHService_WriteTimePeriod_InputMessage">
+    <wsdl:part name="parameters" element="tns:WriteTimePeriod" />
+  </wsdl:message>
+  <wsdl:message name="IUCSHService_WriteTimePeriod_OutputMessage">
+    <wsdl:part name="parameters" element="tns:WriteTimePeriodResponse" />
+  </wsdl:message>
+  <wsdl:message name="IUCSHService_WriteTimeTableObject_InputMessage">
+    <wsdl:part name="parameters" element="tns:WriteTimeTableObject" />
+  </wsdl:message>
+  <wsdl:message name="IUCSHService_WriteTimeTableObject_OutputMessage">
+    <wsdl:part name="parameters" element="tns:WriteTimeTableObjectResponse" />
+  </wsdl:message>
+  <wsdl:message name="IUCSHService_WriteTownship_InputMessage">
+    <wsdl:part name="parameters" element="tns:WriteTownship" />
+  </wsdl:message>
+  <wsdl:message name="IUCSHService_WriteTownship_OutputMessage">
+    <wsdl:part name="parameters" element="tns:WriteTownshipResponse" />
+  </wsdl:message>
+  <wsdl:message name="IUCSHService_WriteUnabilableApproveList_InputMessage">
+    <wsdl:part name="parameters" element="tns:WriteUnabilableApproveList" />
+  </wsdl:message>
+  <wsdl:message name="IUCSHService_WriteUnabilableApproveList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:WriteUnabilableApproveListResponse" />
+  </wsdl:message>
+  <wsdl:message name="IUCSHService_WriteYearlyAttadance_InputMessage">
+    <wsdl:part name="parameters" element="tns:WriteYearlyAttadance" />
+  </wsdl:message>
+  <wsdl:message name="IUCSHService_WriteYearlyAttadance_OutputMessage">
+    <wsdl:part name="parameters" element="tns:WriteYearlyAttadanceResponse" />
+  </wsdl:message>
+  <wsdl:message name="IUCSHService_WriteYear_InputMessage">
+    <wsdl:part name="parameters" element="tns:WriteYear" />
+  </wsdl:message>
+  <wsdl:message name="IUCSHService_WriteYear_OutputMessage">
+    <wsdl:part name="parameters" element="tns:WriteYearResponse" />
+  </wsdl:message>
+  <wsdl:message name="IUCSHService_GetFullTownship_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetFullTownship" />
+  </wsdl:message>
+  <wsdl:message name="IUCSHService_GetFullTownship_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetFullTownshipResponse" />
+  </wsdl:message>
+  <wsdl:message name="IUCSHService_GetFullClass_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetFullClass" />
+  </wsdl:message>
+  <wsdl:message name="IUCSHService_GetFullClass_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetFullClassResponse" />
+  </wsdl:message>
+  <wsdl:message name="IUCSHService_GetFullHolidaySchedule_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetFullHolidaySchedule" />
+  </wsdl:message>
+  <wsdl:message name="IUCSHService_GetFullHolidaySchedule_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetFullHolidayScheduleResponse" />
+  </wsdl:message>
+  <wsdl:message name="IUCSHService_GetFullDailyAttadanceSchedule_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetFullDailyAttadanceSchedule" />
+  </wsdl:message>
+  <wsdl:message name="IUCSHService_GetFullDailyAttadanceSchedule_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetFullDailyAttadanceScheduleResponse" />
+  </wsdl:message>
+  <wsdl:message name="IUCSHService_GetFullMember_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetFullMember" />
+  </wsdl:message>
+  <wsdl:message name="IUCSHService_GetFullMember_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetFullMemberResponse" />
+  </wsdl:message>
+  <wsdl:message name="IUCSHService_GetFullStudent_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetFullStudent" />
+  </wsdl:message>
+  <wsdl:message name="IUCSHService_GetFullStudent_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetFullStudentResponse" />
+  </wsdl:message>
+  <wsdl:message name="IUCSHService_GetFullSubject_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetFullSubject" />
+  </wsdl:message>
+  <wsdl:message name="IUCSHService_GetFullSubject_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetFullSubjectResponse" />
+  </wsdl:message>
+  <wsdl:message name="IUCSHService_GetFullTeacher_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetFullTeacher" />
+  </wsdl:message>
+  <wsdl:message name="IUCSHService_GetFullTeacher_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetFullTeacherResponse" />
+  </wsdl:message>
+  <wsdl:message name="IUCSHService_GetFullMonthlyAttadanceSchedule_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetFullMonthlyAttadanceSchedule" />
+  </wsdl:message>
+  <wsdl:message name="IUCSHService_GetFullMonthlyAttadanceSchedule_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetFullMonthlyAttadanceScheduleResponse" />
+  </wsdl:message>
+  <wsdl:message name="IUCSHService_GetFullYearlyAttadanceSchedule_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetFullYearlyAttadanceSchedule" />
+  </wsdl:message>
+  <wsdl:message name="IUCSHService_GetFullYearlyAttadanceSchedule_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetFullYearlyAttadanceScheduleResponse" />
+  </wsdl:message>
+  <wsdl:message name="IUCSHService_GetFullRequestedList_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetFullRequestedList" />
+  </wsdl:message>
+  <wsdl:message name="IUCSHService_GetFullRequestedList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetFullRequestedListResponse" />
+  </wsdl:message>
+  <wsdl:message name="IUCSHService_GetFullUnabilableApproveList_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetFullUnabilableApproveList" />
+  </wsdl:message>
+  <wsdl:message name="IUCSHService_GetFullUnabilableApproveList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetFullUnabilableApproveListResponse" />
+  </wsdl:message>
+  <wsdl:message name="IUCSHService_GetFullTimeTableObject_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetFullTimeTableObject" />
+  </wsdl:message>
+  <wsdl:message name="IUCSHService_GetFullTimeTableObject_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetFullTimeTableObjectResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IUCSHService">
+    <wsdl:operation name="GetAuditLog">
+      <wsdl:input wsaw:Action="http://tempuri.org/IUCSHService/GetAuditLog" message="tns:IUCSHService_GetAuditLog_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IUCSHService/GetAuditLogResponse" message="tns:IUCSHService_GetAuditLog_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetApproveType">
+      <wsdl:input wsaw:Action="http://tempuri.org/IUCSHService/GetApproveType" message="tns:IUCSHService_GetApproveType_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IUCSHService/GetApproveTypeResponse" message="tns:IUCSHService_GetApproveType_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetMajor">
+      <wsdl:input wsaw:Action="http://tempuri.org/IUCSHService/GetMajor" message="tns:IUCSHService_GetMajor_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IUCSHService/GetMajorResponse" message="tns:IUCSHService_GetMajor_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSemester">
+      <wsdl:input wsaw:Action="http://tempuri.org/IUCSHService/GetSemester" message="tns:IUCSHService_GetSemester_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IUCSHService/GetSemesterResponse" message="tns:IUCSHService_GetSemester_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAttendanceStatus">
+      <wsdl:input wsaw:Action="http://tempuri.org/IUCSHService/GetAttendanceStatus" message="tns:IUCSHService_GetAttendanceStatus_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IUCSHService/GetAttendanceStatusResponse" message="tns:IUCSHService_GetAttendanceStatus_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAuthentication">
+      <wsdl:input wsaw:Action="http://tempuri.org/IUCSHService/GetAuthentication" message="tns:IUCSHService_GetAuthentication_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IUCSHService/GetAuthenticationResponse" message="tns:IUCSHService_GetAuthentication_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetClass">
+      <wsdl:input wsaw:Action="http://tempuri.org/IUCSHService/GetClass" message="tns:IUCSHService_GetClass_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IUCSHService/GetClassResponse" message="tns:IUCSHService_GetClass_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDailyAttadance">
+      <wsdl:input wsaw:Action="http://tempuri.org/IUCSHService/GetDailyAttadance" message="tns:IUCSHService_GetDailyAttadance_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IUCSHService/GetDailyAttadanceResponse" message="tns:IUCSHService_GetDailyAttadance_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDayInWeek">
+      <wsdl:input wsaw:Action="http://tempuri.org/IUCSHService/GetDayInWeek" message="tns:IUCSHService_GetDayInWeek_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IUCSHService/GetDayInWeekResponse" message="tns:IUCSHService_GetDayInWeek_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDepartment">
+      <wsdl:input wsaw:Action="http://tempuri.org/IUCSHService/GetDepartment" message="tns:IUCSHService_GetDepartment_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IUCSHService/GetDepartmentResponse" message="tns:IUCSHService_GetDepartment_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDivision">
+      <wsdl:input wsaw:Action="http://tempuri.org/IUCSHService/GetDivision" message="tns:IUCSHService_GetDivision_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IUCSHService/GetDivisionResponse" message="tns:IUCSHService_GetDivision_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetHolidayType">
+      <wsdl:input wsaw:Action="http://tempuri.org/IUCSHService/GetHolidayType" message="tns:IUCSHService_GetHolidayType_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IUCSHService/GetHolidayTypeResponse" message="tns:IUCSHService_GetHolidayType_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetHolidaySchedule">
+      <wsdl:input wsaw:Action="http://tempuri.org/IUCSHService/GetHolidaySchedule" message="tns:IUCSHService_GetHolidaySchedule_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IUCSHService/GetHolidayScheduleResponse" message="tns:IUCSHService_GetHolidaySchedule_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetMember">
+      <wsdl:input wsaw:Action="http://tempuri.org/IUCSHService/GetMember" message="tns:IUCSHService_GetMember_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IUCSHService/GetMemberResponse" message="tns:IUCSHService_GetMember_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetMemberPermission">
+      <wsdl:input wsaw:Action="http://tempuri.org/IUCSHService/GetMemberPermission" message="tns:IUCSHService_GetMemberPermission_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IUCSHService/GetMemberPermissionResponse" message="tns:IUCSHService_GetMemberPermission_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetMemberRole">
+      <wsdl:input wsaw:Action="http://tempuri.org/IUCSHService/GetMemberRole" message="tns:IUCSHService_GetMemberRole_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IUCSHService/GetMemberRoleResponse" message="tns:IUCSHService_GetMemberRole_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetMonthlyAttadance">
+      <wsdl:input wsaw:Action="http://tempuri.org/IUCSHService/GetMonthlyAttadance" message="tns:IUCSHService_GetMonthlyAttadance_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IUCSHService/GetMonthlyAttadanceResponse" message="tns:IUCSHService_GetMonthlyAttadance_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPermissionMaster">
+      <wsdl:input wsaw:Action="http://tempuri.org/IUCSHService/GetPermissionMaster" message="tns:IUCSHService_GetPermissionMaster_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IUCSHService/GetPermissionMasterResponse" message="tns:IUCSHService_GetPermissionMaster_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetRequestList">
+      <wsdl:input wsaw:Action="http://tempuri.org/IUCSHService/GetRequestList" message="tns:IUCSHService_GetRequestList_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IUCSHService/GetRequestListResponse" message="tns:IUCSHService_GetRequestList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetRoom">
+      <wsdl:input wsaw:Action="http://tempuri.org/IUCSHService/GetRoom" message="tns:IUCSHService_GetRoom_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IUCSHService/GetRoomResponse" message="tns:IUCSHService_GetRoom_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetServiceAccessRight">
+      <wsdl:input wsaw:Action="http://tempuri.org/IUCSHService/GetServiceAccessRight" message="tns:IUCSHService_GetServiceAccessRight_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IUCSHService/GetServiceAccessRightResponse" message="tns:IUCSHService_GetServiceAccessRight_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetStudent">
+      <wsdl:input wsaw:Action="http://tempuri.org/IUCSHService/GetStudent" message="tns:IUCSHService_GetStudent_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IUCSHService/GetStudentResponse" message="tns:IUCSHService_GetStudent_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSubject">
+      <wsdl:input wsaw:Action="http://tempuri.org/IUCSHService/GetSubject" message="tns:IUCSHService_GetSubject_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IUCSHService/GetSubjectResponse" message="tns:IUCSHService_GetSubject_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSubjectType">
+      <wsdl:input wsaw:Action="http://tempuri.org/IUCSHService/GetSubjectType" message="tns:IUCSHService_GetSubjectType_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IUCSHService/GetSubjectTypeResponse" message="tns:IUCSHService_GetSubjectType_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetTeacher">
+      <wsdl:input wsaw:Action="http://tempuri.org/IUCSHService/GetTeacher" message="tns:IUCSHService_GetTeacher_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IUCSHService/GetTeacherResponse" message="tns:IUCSHService_GetTeacher_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetTimePeriod">
+      <wsdl:input wsaw:Action="http://tempuri.org/IUCSHService/GetTimePeriod" message="tns:IUCSHService_GetTimePeriod_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IUCSHService/GetTimePeriodResponse" message="tns:IUCSHService_GetTimePeriod_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetTimeTableObject">
+      <wsdl:input wsaw:Action="http://tempuri.org/IUCSHService/GetTimeTableObject" message="tns:IUCSHService_GetTimeTableObject_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IUCSHService/GetTimeTableObjectResponse" message="tns:IUCSHService_GetTimeTableObject_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetTownship">
+      <wsdl:input wsaw:Action="http://tempuri.org/IUCSHService/GetTownship" message="tns:IUCSHService_GetTownship_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IUCSHService/GetTownshipResponse" message="tns:IUCSHService_GetTownship_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetUnabilableApproveList">
+      <wsdl:input wsaw:Action="http://tempuri.org/IUCSHService/GetUnabilableApproveList" message="tns:IUCSHService_GetUnabilableApproveList_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IUCSHService/GetUnabilableApproveListResponse" message="tns:IUCSHService_GetUnabilableApproveList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetUniversity">
+      <wsdl:input wsaw:Action="http://tempuri.org/IUCSHService/GetUniversity" message="tns:IUCSHService_GetUniversity_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IUCSHService/GetUniversityResponse" message="tns:IUCSHService_GetUniversity_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetYearlyAttadance">
+      <wsdl:input wsaw:Action="http://tempuri.org/IUCSHService/GetYearlyAttadance" message="tns:IUCSHService_GetYearlyAttadance_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IUCSHService/GetYearlyAttadanceResponse" message="tns:IUCSHService_GetYearlyAttadance_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetYears">
+      <wsdl:input wsaw:Action="http://tempuri.org/IUCSHService/GetYears" message="tns:IUCSHService_GetYears_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IUCSHService/GetYearsResponse" message="tns:IUCSHService_GetYears_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="WriteDivision">
+      <wsdl:input wsaw:Action="http://tempuri.org/IUCSHService/WriteDivision" message="tns:IUCSHService_WriteDivision_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IUCSHService/WriteDivisionResponse" message="tns:IUCSHService_WriteDivision_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="WriteMajor">
+      <wsdl:input wsaw:Action="http://tempuri.org/IUCSHService/WriteMajor" message="tns:IUCSHService_WriteMajor_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IUCSHService/WriteMajorResponse" message="tns:IUCSHService_WriteMajor_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="WriteMemberRole">
+      <wsdl:input wsaw:Action="http://tempuri.org/IUCSHService/WriteMemberRole" message="tns:IUCSHService_WriteMemberRole_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IUCSHService/WriteMemberRoleResponse" message="tns:IUCSHService_WriteMemberRole_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="WriteMember">
+      <wsdl:input wsaw:Action="http://tempuri.org/IUCSHService/WriteMember" message="tns:IUCSHService_WriteMember_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IUCSHService/WriteMemberResponse" message="tns:IUCSHService_WriteMember_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="WriteMemberPermission">
+      <wsdl:input wsaw:Action="http://tempuri.org/IUCSHService/WriteMemberPermission" message="tns:IUCSHService_WriteMemberPermission_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IUCSHService/WriteMemberPermissionResponse" message="tns:IUCSHService_WriteMemberPermission_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="WriteApproveType">
+      <wsdl:input wsaw:Action="http://tempuri.org/IUCSHService/WriteApproveType" message="tns:IUCSHService_WriteApproveType_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IUCSHService/WriteApproveTypeResponse" message="tns:IUCSHService_WriteApproveType_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="WriteAttendanceStatus">
+      <wsdl:input wsaw:Action="http://tempuri.org/IUCSHService/WriteAttendanceStatus" message="tns:IUCSHService_WriteAttendanceStatus_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IUCSHService/WriteAttendanceStatusResponse" message="tns:IUCSHService_WriteAttendanceStatus_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="WriteAuthentication">
+      <wsdl:input wsaw:Action="http://tempuri.org/IUCSHService/WriteAuthentication" message="tns:IUCSHService_WriteAuthentication_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IUCSHService/WriteAuthenticationResponse" message="tns:IUCSHService_WriteAuthentication_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="WriteClass">
+      <wsdl:input wsaw:Action="http://tempuri.org/IUCSHService/WriteClass" message="tns:IUCSHService_WriteClass_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IUCSHService/WriteClassResponse" message="tns:IUCSHService_WriteClass_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="WriteDailyAttadance">
+      <wsdl:input wsaw:Action="http://tempuri.org/IUCSHService/WriteDailyAttadance" message="tns:IUCSHService_WriteDailyAttadance_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IUCSHService/WriteDailyAttadanceResponse" message="tns:IUCSHService_WriteDailyAttadance_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="WriteDayInWeek">
+      <wsdl:input wsaw:Action="http://tempuri.org/IUCSHService/WriteDayInWeek" message="tns:IUCSHService_WriteDayInWeek_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IUCSHService/WriteDayInWeekResponse" message="tns:IUCSHService_WriteDayInWeek_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="WriteDepartment">
+      <wsdl:input wsaw:Action="http://tempuri.org/IUCSHService/WriteDepartment" message="tns:IUCSHService_WriteDepartment_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IUCSHService/WriteDepartmentResponse" message="tns:IUCSHService_WriteDepartment_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="WriteHolidayType">
+      <wsdl:input wsaw:Action="http://tempuri.org/IUCSHService/WriteHolidayType" message="tns:IUCSHService_WriteHolidayType_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IUCSHService/WriteHolidayTypeResponse" message="tns:IUCSHService_WriteHolidayType_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="WriteMonthlyAttadance">
+      <wsdl:input wsaw:Action="http://tempuri.org/IUCSHService/WriteMonthlyAttadance" message="tns:IUCSHService_WriteMonthlyAttadance_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IUCSHService/WriteMonthlyAttadanceResponse" message="tns:IUCSHService_WriteMonthlyAttadance_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="WritePermissionMaster">
+      <wsdl:input wsaw:Action="http://tempuri.org/IUCSHService/WritePermissionMaster" message="tns:IUCSHService_WritePermissionMaster_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IUCSHService/WritePermissionMasterResponse" message="tns:IUCSHService_WritePermissionMaster_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="WriteRequestList">
+      <wsdl:input wsaw:Action="http://tempuri.org/IUCSHService/WriteRequestList" message="tns:IUCSHService_WriteRequestList_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IUCSHService/WriteRequestListResponse" message="tns:IUCSHService_WriteRequestList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="WriteRoom">
+      <wsdl:input wsaw:Action="http://tempuri.org/IUCSHService/WriteRoom" message="tns:IUCSHService_WriteRoom_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IUCSHService/WriteRoomResponse" message="tns:IUCSHService_WriteRoom_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="WriteStudent">
+      <wsdl:input wsaw:Action="http://tempuri.org/IUCSHService/WriteStudent" message="tns:IUCSHService_WriteStudent_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IUCSHService/WriteStudentResponse" message="tns:IUCSHService_WriteStudent_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="WriteSubject">
+      <wsdl:input wsaw:Action="http://tempuri.org/IUCSHService/WriteSubject" message="tns:IUCSHService_WriteSubject_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IUCSHService/WriteSubjectResponse" message="tns:IUCSHService_WriteSubject_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="WriteSubjectType">
+      <wsdl:input wsaw:Action="http://tempuri.org/IUCSHService/WriteSubjectType" message="tns:IUCSHService_WriteSubjectType_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IUCSHService/WriteSubjectTypeResponse" message="tns:IUCSHService_WriteSubjectType_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="WriteTeacher">
+      <wsdl:input wsaw:Action="http://tempuri.org/IUCSHService/WriteTeacher" message="tns:IUCSHService_WriteTeacher_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IUCSHService/WriteTeacherResponse" message="tns:IUCSHService_WriteTeacher_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="WriteTimePeriod">
+      <wsdl:input wsaw:Action="http://tempuri.org/IUCSHService/WriteTimePeriod" message="tns:IUCSHService_WriteTimePeriod_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IUCSHService/WriteTimePeriodResponse" message="tns:IUCSHService_WriteTimePeriod_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="WriteTimeTableObject">
+      <wsdl:input wsaw:Action="http://tempuri.org/IUCSHService/WriteTimeTableObject" message="tns:IUCSHService_WriteTimeTableObject_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IUCSHService/WriteTimeTableObjectResponse" message="tns:IUCSHService_WriteTimeTableObject_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="WriteTownship">
+      <wsdl:input wsaw:Action="http://tempuri.org/IUCSHService/WriteTownship" message="tns:IUCSHService_WriteTownship_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IUCSHService/WriteTownshipResponse" message="tns:IUCSHService_WriteTownship_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="WriteUnabilableApproveList">
+      <wsdl:input wsaw:Action="http://tempuri.org/IUCSHService/WriteUnabilableApproveList" message="tns:IUCSHService_WriteUnabilableApproveList_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IUCSHService/WriteUnabilableApproveListResponse" message="tns:IUCSHService_WriteUnabilableApproveList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="WriteYearlyAttadance">
+      <wsdl:input wsaw:Action="http://tempuri.org/IUCSHService/WriteYearlyAttadance" message="tns:IUCSHService_WriteYearlyAttadance_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IUCSHService/WriteYearlyAttadanceResponse" message="tns:IUCSHService_WriteYearlyAttadance_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="WriteYear">
+      <wsdl:input wsaw:Action="http://tempuri.org/IUCSHService/WriteYear" message="tns:IUCSHService_WriteYear_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IUCSHService/WriteYearResponse" message="tns:IUCSHService_WriteYear_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetFullTownship">
+      <wsdl:input wsaw:Action="http://tempuri.org/IUCSHService/GetFullTownship" message="tns:IUCSHService_GetFullTownship_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IUCSHService/GetFullTownshipResponse" message="tns:IUCSHService_GetFullTownship_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetFullClass">
+      <wsdl:input wsaw:Action="http://tempuri.org/IUCSHService/GetFullClass" message="tns:IUCSHService_GetFullClass_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IUCSHService/GetFullClassResponse" message="tns:IUCSHService_GetFullClass_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetFullHolidaySchedule">
+      <wsdl:input wsaw:Action="http://tempuri.org/IUCSHService/GetFullHolidaySchedule" message="tns:IUCSHService_GetFullHolidaySchedule_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IUCSHService/GetFullHolidayScheduleResponse" message="tns:IUCSHService_GetFullHolidaySchedule_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetFullDailyAttadanceSchedule">
+      <wsdl:input wsaw:Action="http://tempuri.org/IUCSHService/GetFullDailyAttadanceSchedule" message="tns:IUCSHService_GetFullDailyAttadanceSchedule_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IUCSHService/GetFullDailyAttadanceScheduleResponse" message="tns:IUCSHService_GetFullDailyAttadanceSchedule_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetFullMember">
+      <wsdl:input wsaw:Action="http://tempuri.org/IUCSHService/GetFullMember" message="tns:IUCSHService_GetFullMember_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IUCSHService/GetFullMemberResponse" message="tns:IUCSHService_GetFullMember_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetFullStudent">
+      <wsdl:input wsaw:Action="http://tempuri.org/IUCSHService/GetFullStudent" message="tns:IUCSHService_GetFullStudent_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IUCSHService/GetFullStudentResponse" message="tns:IUCSHService_GetFullStudent_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetFullSubject">
+      <wsdl:input wsaw:Action="http://tempuri.org/IUCSHService/GetFullSubject" message="tns:IUCSHService_GetFullSubject_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IUCSHService/GetFullSubjectResponse" message="tns:IUCSHService_GetFullSubject_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetFullTeacher">
+      <wsdl:input wsaw:Action="http://tempuri.org/IUCSHService/GetFullTeacher" message="tns:IUCSHService_GetFullTeacher_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IUCSHService/GetFullTeacherResponse" message="tns:IUCSHService_GetFullTeacher_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetFullMonthlyAttadanceSchedule">
+      <wsdl:input wsaw:Action="http://tempuri.org/IUCSHService/GetFullMonthlyAttadanceSchedule" message="tns:IUCSHService_GetFullMonthlyAttadanceSchedule_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IUCSHService/GetFullMonthlyAttadanceScheduleResponse" message="tns:IUCSHService_GetFullMonthlyAttadanceSchedule_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetFullYearlyAttadanceSchedule">
+      <wsdl:input wsaw:Action="http://tempuri.org/IUCSHService/GetFullYearlyAttadanceSchedule" message="tns:IUCSHService_GetFullYearlyAttadanceSchedule_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IUCSHService/GetFullYearlyAttadanceScheduleResponse" message="tns:IUCSHService_GetFullYearlyAttadanceSchedule_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetFullRequestedList">
+      <wsdl:input wsaw:Action="http://tempuri.org/IUCSHService/GetFullRequestedList" message="tns:IUCSHService_GetFullRequestedList_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IUCSHService/GetFullRequestedListResponse" message="tns:IUCSHService_GetFullRequestedList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetFullUnabilableApproveList">
+      <wsdl:input wsaw:Action="http://tempuri.org/IUCSHService/GetFullUnabilableApproveList" message="tns:IUCSHService_GetFullUnabilableApproveList_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IUCSHService/GetFullUnabilableApproveListResponse" message="tns:IUCSHService_GetFullUnabilableApproveList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetFullTimeTableObject">
+      <wsdl:input wsaw:Action="http://tempuri.org/IUCSHService/GetFullTimeTableObject" message="tns:IUCSHService_GetFullTimeTableObject_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IUCSHService/GetFullTimeTableObjectResponse" message="tns:IUCSHService_GetFullTimeTableObject_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IUCSHService" type="tns:IUCSHService">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetAuditLog">
+      <soap:operation soapAction="http://tempuri.org/IUCSHService/GetAuditLog" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetApproveType">
+      <soap:operation soapAction="http://tempuri.org/IUCSHService/GetApproveType" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetMajor">
+      <soap:operation soapAction="http://tempuri.org/IUCSHService/GetMajor" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSemester">
+      <soap:operation soapAction="http://tempuri.org/IUCSHService/GetSemester" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAttendanceStatus">
+      <soap:operation soapAction="http://tempuri.org/IUCSHService/GetAttendanceStatus" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAuthentication">
+      <soap:operation soapAction="http://tempuri.org/IUCSHService/GetAuthentication" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetClass">
+      <soap:operation soapAction="http://tempuri.org/IUCSHService/GetClass" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDailyAttadance">
+      <soap:operation soapAction="http://tempuri.org/IUCSHService/GetDailyAttadance" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDayInWeek">
+      <soap:operation soapAction="http://tempuri.org/IUCSHService/GetDayInWeek" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDepartment">
+      <soap:operation soapAction="http://tempuri.org/IUCSHService/GetDepartment" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDivision">
+      <soap:operation soapAction="http://tempuri.org/IUCSHService/GetDivision" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetHolidayType">
+      <soap:operation soapAction="http://tempuri.org/IUCSHService/GetHolidayType" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetHolidaySchedule">
+      <soap:operation soapAction="http://tempuri.org/IUCSHService/GetHolidaySchedule" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetMember">
+      <soap:operation soapAction="http://tempuri.org/IUCSHService/GetMember" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetMemberPermission">
+      <soap:operation soapAction="http://tempuri.org/IUCSHService/GetMemberPermission" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetMemberRole">
+      <soap:operation soapAction="http://tempuri.org/IUCSHService/GetMemberRole" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetMonthlyAttadance">
+      <soap:operation soapAction="http://tempuri.org/IUCSHService/GetMonthlyAttadance" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPermissionMaster">
+      <soap:operation soapAction="http://tempuri.org/IUCSHService/GetPermissionMaster" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetRequestList">
+      <soap:operation soapAction="http://tempuri.org/IUCSHService/GetRequestList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetRoom">
+      <soap:operation soapAction="http://tempuri.org/IUCSHService/GetRoom" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetServiceAccessRight">
+      <soap:operation soapAction="http://tempuri.org/IUCSHService/GetServiceAccessRight" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetStudent">
+      <soap:operation soapAction="http://tempuri.org/IUCSHService/GetStudent" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSubject">
+      <soap:operation soapAction="http://tempuri.org/IUCSHService/GetSubject" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSubjectType">
+      <soap:operation soapAction="http://tempuri.org/IUCSHService/GetSubjectType" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTeacher">
+      <soap:operation soapAction="http://tempuri.org/IUCSHService/GetTeacher" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTimePeriod">
+      <soap:operation soapAction="http://tempuri.org/IUCSHService/GetTimePeriod" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTimeTableObject">
+      <soap:operation soapAction="http://tempuri.org/IUCSHService/GetTimeTableObject" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTownship">
+      <soap:operation soapAction="http://tempuri.org/IUCSHService/GetTownship" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUnabilableApproveList">
+      <soap:operation soapAction="http://tempuri.org/IUCSHService/GetUnabilableApproveList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUniversity">
+      <soap:operation soapAction="http://tempuri.org/IUCSHService/GetUniversity" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetYearlyAttadance">
+      <soap:operation soapAction="http://tempuri.org/IUCSHService/GetYearlyAttadance" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetYears">
+      <soap:operation soapAction="http://tempuri.org/IUCSHService/GetYears" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="WriteDivision">
+      <soap:operation soapAction="http://tempuri.org/IUCSHService/WriteDivision" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="WriteMajor">
+      <soap:operation soapAction="http://tempuri.org/IUCSHService/WriteMajor" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="WriteMemberRole">
+      <soap:operation soapAction="http://tempuri.org/IUCSHService/WriteMemberRole" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="WriteMember">
+      <soap:operation soapAction="http://tempuri.org/IUCSHService/WriteMember" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="WriteMemberPermission">
+      <soap:operation soapAction="http://tempuri.org/IUCSHService/WriteMemberPermission" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="WriteApproveType">
+      <soap:operation soapAction="http://tempuri.org/IUCSHService/WriteApproveType" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="WriteAttendanceStatus">
+      <soap:operation soapAction="http://tempuri.org/IUCSHService/WriteAttendanceStatus" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="WriteAuthentication">
+      <soap:operation soapAction="http://tempuri.org/IUCSHService/WriteAuthentication" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="WriteClass">
+      <soap:operation soapAction="http://tempuri.org/IUCSHService/WriteClass" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="WriteDailyAttadance">
+      <soap:operation soapAction="http://tempuri.org/IUCSHService/WriteDailyAttadance" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="WriteDayInWeek">
+      <soap:operation soapAction="http://tempuri.org/IUCSHService/WriteDayInWeek" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="WriteDepartment">
+      <soap:operation soapAction="http://tempuri.org/IUCSHService/WriteDepartment" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="WriteHolidayType">
+      <soap:operation soapAction="http://tempuri.org/IUCSHService/WriteHolidayType" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="WriteMonthlyAttadance">
+      <soap:operation soapAction="http://tempuri.org/IUCSHService/WriteMonthlyAttadance" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="WritePermissionMaster">
+      <soap:operation soapAction="http://tempuri.org/IUCSHService/WritePermissionMaster" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="WriteRequestList">
+      <soap:operation soapAction="http://tempuri.org/IUCSHService/WriteRequestList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="WriteRoom">
+      <soap:operation soapAction="http://tempuri.org/IUCSHService/WriteRoom" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="WriteStudent">
+      <soap:operation soapAction="http://tempuri.org/IUCSHService/WriteStudent" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="WriteSubject">
+      <soap:operation soapAction="http://tempuri.org/IUCSHService/WriteSubject" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="WriteSubjectType">
+      <soap:operation soapAction="http://tempuri.org/IUCSHService/WriteSubjectType" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="WriteTeacher">
+      <soap:operation soapAction="http://tempuri.org/IUCSHService/WriteTeacher" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="WriteTimePeriod">
+      <soap:operation soapAction="http://tempuri.org/IUCSHService/WriteTimePeriod" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="WriteTimeTableObject">
+      <soap:operation soapAction="http://tempuri.org/IUCSHService/WriteTimeTableObject" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="WriteTownship">
+      <soap:operation soapAction="http://tempuri.org/IUCSHService/WriteTownship" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="WriteUnabilableApproveList">
+      <soap:operation soapAction="http://tempuri.org/IUCSHService/WriteUnabilableApproveList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="WriteYearlyAttadance">
+      <soap:operation soapAction="http://tempuri.org/IUCSHService/WriteYearlyAttadance" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="WriteYear">
+      <soap:operation soapAction="http://tempuri.org/IUCSHService/WriteYear" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetFullTownship">
+      <soap:operation soapAction="http://tempuri.org/IUCSHService/GetFullTownship" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetFullClass">
+      <soap:operation soapAction="http://tempuri.org/IUCSHService/GetFullClass" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetFullHolidaySchedule">
+      <soap:operation soapAction="http://tempuri.org/IUCSHService/GetFullHolidaySchedule" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetFullDailyAttadanceSchedule">
+      <soap:operation soapAction="http://tempuri.org/IUCSHService/GetFullDailyAttadanceSchedule" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetFullMember">
+      <soap:operation soapAction="http://tempuri.org/IUCSHService/GetFullMember" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetFullStudent">
+      <soap:operation soapAction="http://tempuri.org/IUCSHService/GetFullStudent" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetFullSubject">
+      <soap:operation soapAction="http://tempuri.org/IUCSHService/GetFullSubject" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetFullTeacher">
+      <soap:operation soapAction="http://tempuri.org/IUCSHService/GetFullTeacher" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetFullMonthlyAttadanceSchedule">
+      <soap:operation soapAction="http://tempuri.org/IUCSHService/GetFullMonthlyAttadanceSchedule" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetFullYearlyAttadanceSchedule">
+      <soap:operation soapAction="http://tempuri.org/IUCSHService/GetFullYearlyAttadanceSchedule" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetFullRequestedList">
+      <soap:operation soapAction="http://tempuri.org/IUCSHService/GetFullRequestedList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetFullUnabilableApproveList">
+      <soap:operation soapAction="http://tempuri.org/IUCSHService/GetFullUnabilableApproveList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetFullTimeTableObject">
+      <soap:operation soapAction="http://tempuri.org/IUCSHService/GetFullTimeTableObject" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="UCSHService">
+    <wsdl:port name="BasicHttpBinding_IUCSHService" binding="tns:BasicHttpBinding_IUCSHService">
+      <soap:address location="http://localhost/UCSHEService/UCSHService.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

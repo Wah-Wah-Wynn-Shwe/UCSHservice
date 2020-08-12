@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PublishUrlHistory>D:\Projects\Released\|http://localhost/integration.ucsheservices.com/IntegrationService/|publish\</PublishUrlHistory>
+    <InstallUrlHistory>http://localhost/integration.ucsheservices.com/IntegrationService/</InstallUrlHistory>
+    <SupportUrlHistory />
+    <UpdateUrlHistory>http://localhost/AndroidServiceIntegration/</UpdateUrlHistory>
+    <BootstrapperUrlHistory />
+    <ErrorReportUrlHistory />
+    <FallbackCulture>en-US</FallbackCulture>
+    <VerifyUploadedFiles>false</VerifyUploadedFiles>
+  </PropertyGroup>
+</Project>

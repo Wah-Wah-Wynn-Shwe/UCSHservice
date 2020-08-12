@@ -1,0 +1,1718 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost/UCSHEService/UCSHService.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/" />
+  <xs:element name="GetAuditLog">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="RequestByIP" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="AuthenticationCode" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="AuditLogID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="TableName" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ColumnName" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="AffectedID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="RequestedUser" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAuditLogResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/" minOccurs="0" name="GetAuditLogResult" nillable="true" type="q1:ArrayOfAuditLog" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetApproveType">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="RequestByIP" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="AuthenticationCode" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Active" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetApproveTypeResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/" minOccurs="0" name="GetApproveTypeResult" nillable="true" type="q2:ArrayOfApproveType" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetMajor">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="RequestByIP" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="AuthenticationCode" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Active" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetMajorResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/" minOccurs="0" name="GetMajorResult" nillable="true" type="q3:ArrayOfMajor" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetSemester">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="RequestByIP" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="AuthenticationCode" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Active" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetSemesterResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q4="http://schemas.datacontract.org/2004/07/" minOccurs="0" name="GetSemesterResult" nillable="true" type="q4:ArrayOfSemester" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAttendanceStatus">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="RequestByIP" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="AuthenticationCode" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Active" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAttendanceStatusResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q5="http://schemas.datacontract.org/2004/07/" minOccurs="0" name="GetAttendanceStatusResult" nillable="true" type="q5:ArrayOfAttendanceStatus" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAuthentication">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="RequestByIP" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="AuthenticationCode" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="AuthenticationKey" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="MinSuccessCount" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="MaxSuccessCount" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="MinErrorCount" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="MaxErrorCount" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Active" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAuthenticationResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q6="http://schemas.datacontract.org/2004/07/" minOccurs="0" name="GetAuthenticationResult" nillable="true" type="q6:ArrayOfAuthentication" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetClass">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="RequestByIP" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="AuthenticationCode" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="MajorID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="YearID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Active" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetClassResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q7="http://schemas.datacontract.org/2004/07/" minOccurs="0" name="GetClassResult" nillable="true" type="q7:ArrayOfClass" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetDailyAttadance">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="RequestByIP" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="AuthenticationCode" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="AttDateTime" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="StudentID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="TimeTableObjectID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="SemesterID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="AttendanceStatusID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Active" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetDailyAttadanceResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q8="http://schemas.datacontract.org/2004/07/" minOccurs="0" name="GetDailyAttadanceResult" nillable="true" type="q8:ArrayOfDailyAttadanceSchedule" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetDayInWeek">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="RequestByIP" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="AuthenticationCode" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Active" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetDayInWeekResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q9="http://schemas.datacontract.org/2004/07/" minOccurs="0" name="GetDayInWeekResult" nillable="true" type="q9:ArrayOfDayInWeek" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetDepartment">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="RequestByIP" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="AuthenticationCode" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Active" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetDepartmentResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q10="http://schemas.datacontract.org/2004/07/" minOccurs="0" name="GetDepartmentResult" nillable="true" type="q10:ArrayOfDepartment" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetDivision">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="RequestByIP" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="AuthenticationCode" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Active" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetDivisionResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q11="http://schemas.datacontract.org/2004/07/" minOccurs="0" name="GetDivisionResult" nillable="true" type="q11:ArrayOfDivision" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetHolidayType">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="RequestByIP" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="AuthenticationCode" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Active" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetHolidayTypeResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q12="http://schemas.datacontract.org/2004/07/" minOccurs="0" name="GetHolidayTypeResult" nillable="true" type="q12:ArrayOfHolidayType" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetHolidaySchedule">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="RequestByIP" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="AuthenticationCode" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="TypeID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="FromDateTime" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ToDateTime" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Active" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetHolidayScheduleResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q13="http://schemas.datacontract.org/2004/07/" minOccurs="0" name="GetHolidayScheduleResult" nillable="true" type="q13:ArrayOfHolidaySchedule" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetMember">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="RequestByIP" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="AuthenticationCode" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="LoginID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Password" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="FullName" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Email" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="AuthenticationID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="MemberRoleID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Active" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetMemberResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q14="http://schemas.datacontract.org/2004/07/" minOccurs="0" name="GetMemberResult" nillable="true" type="q14:ArrayOfMember" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetMemberPermission">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="RequestByIP" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="AuthenticationCode" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="MemberRoleID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="PermissionMasterID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Allowed" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Active" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetMemberPermissionResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q15="http://schemas.datacontract.org/2004/07/" minOccurs="0" name="GetMemberPermissionResult" nillable="true" type="q15:ArrayOfMemberPermission" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetMemberRole">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="RequestByIP" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="AuthenticationCode" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Active" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetMemberRoleResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q16="http://schemas.datacontract.org/2004/07/" minOccurs="0" name="GetMemberRoleResult" nillable="true" type="q16:ArrayOfMemberRole" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetMonthlyAttadance">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="RequestByIP" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="AuthenticationCode" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="AttDateTime" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="StudentID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="SemesterID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="MinCurrentAttandancePercent" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="NumberOfAttandance" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="NumberOfAbsent" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Active" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetMonthlyAttadanceResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q17="http://schemas.datacontract.org/2004/07/" minOccurs="0" name="GetMonthlyAttadanceResult" nillable="true" type="q17:ArrayOfMonthlyAttadanceSchedule" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetPermissionMaster">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="RequestByIP" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="AuthenticationCode" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Value" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ParentID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Active" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetPermissionMasterResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q18="http://schemas.datacontract.org/2004/07/" minOccurs="0" name="GetPermissionMasterResult" nillable="true" type="q18:ArrayOfPermissionMaster" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetRequestList">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="RequestByIP" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="AuthenticationCode" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="RequestByHostName" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="MachineKey" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="MACAddrress" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="StudentID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="MemberID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="LastRequestedDateTime" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="RequestedCount" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Active" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetRequestListResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q19="http://schemas.datacontract.org/2004/07/" minOccurs="0" name="GetRequestListResult" nillable="true" type="q19:ArrayOfRequestList" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetRoom">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="RequestByIP" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="AuthenticationCode" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Code" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="AccessRightCode" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="North_Lattitude" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="North_Longtitude" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="South_Lattitude" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="South_Longtitude" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="East_Lattitude" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="East_Longtitude" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="West_Lattitude" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="West_Longtitude" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Active" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetRoomResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q20="http://schemas.datacontract.org/2004/07/" minOccurs="0" name="GetRoomResult" nillable="true" type="q20:ArrayOfRoom" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetServiceAccessRight">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="RequestByIP" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="AuthenticationCode" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Password" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="PermissionLevel" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="RoomID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Active" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetServiceAccessRightResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q21="http://schemas.datacontract.org/2004/07/" minOccurs="0" name="GetServiceAccessRightResult" nillable="true" type="q21:ArrayOfServiceAccessRight" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetStudent">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="RequestByIP" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="AuthenticationCode" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="LoginID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Password" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="FullName" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="StudentCode" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Email" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="MajorID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="AuthenticationID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ClassID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Active" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetStudentResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q22="http://schemas.datacontract.org/2004/07/" minOccurs="0" name="GetStudentResult" nillable="true" type="q22:ArrayOfStudent" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetSubject">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="RequestByIP" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="AuthenticationCode" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="SubjectCode" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="SubjectTypeID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="SemesterID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="MajorID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="YearsID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Active" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetSubjectResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q23="http://schemas.datacontract.org/2004/07/" minOccurs="0" name="GetSubjectResult" nillable="true" type="q23:ArrayOfSubject" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetSubjectType">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="RequestByIP" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="AuthenticationCode" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Active" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetSubjectTypeResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q24="http://schemas.datacontract.org/2004/07/" minOccurs="0" name="GetSubjectTypeResult" nillable="true" type="q24:ArrayOfSubjectType" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetTeacher">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="RequestByIP" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="AuthenticationCode" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="DepartmentID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Email" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="AuthenticateID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Active" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetTeacherResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q25="http://schemas.datacontract.org/2004/07/" minOccurs="0" name="GetTeacherResult" nillable="true" type="q25:ArrayOfTeacher" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetTimePeriod">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="RequestByIP" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="AuthenticationCode" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="FromTime" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ToTime" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Active" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetTimePeriodResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q26="http://schemas.datacontract.org/2004/07/" minOccurs="0" name="GetTimePeriodResult" nillable="true" type="q26:ArrayOfTimePeriod" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetTimeTableObject">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="RequestByIP" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="AuthenticationCode" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ClassID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="DayInWeekID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="TimePeriodID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="SubjectID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="TeacherID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="RoomID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="SemesterID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Active" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetTimeTableObjectResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q27="http://schemas.datacontract.org/2004/07/" minOccurs="0" name="GetTimeTableObjectResult" nillable="true" type="q27:ArrayOfTimeTableObject" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetTownship">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="RequestByIP" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="AuthenticationCode" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="DivisionID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Active" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetTownshipResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q28="http://schemas.datacontract.org/2004/07/" minOccurs="0" name="GetTownshipResult" nillable="true" type="q28:ArrayOfTownship" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetUnabilableApproveList">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="RequestByIP" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="AuthenticationCode" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="AttDateTime" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="RequestListID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="DailyAttadanceScheduleID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Approved" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Active" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetUnabilableApproveListResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q29="http://schemas.datacontract.org/2004/07/" minOccurs="0" name="GetUnabilableApproveListResult" nillable="true" type="q29:ArrayOfUnabilableApproveList" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetUniversity">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="RequestByIP" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="AuthenticationCode" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="TownshipID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Active" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetUniversityResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q30="http://schemas.datacontract.org/2004/07/" minOccurs="0" name="GetUniversityResult" nillable="true" type="q30:ArrayOfUniversity" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetYearlyAttadance">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="RequestByIP" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="AuthenticationCode" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="AttDateTime" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="StudentID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="SemesterID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="MinCurrentAttandancePercent" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="NumberOfAttandance" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="NumberOfAbsent" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Active" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetYearlyAttadanceResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q31="http://schemas.datacontract.org/2004/07/" minOccurs="0" name="GetYearlyAttadanceResult" nillable="true" type="q31:ArrayOfYearlyAttadanceSchedule" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetYears">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="RequestByIP" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="AuthenticationCode" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Active" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetYearsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q32="http://schemas.datacontract.org/2004/07/" minOccurs="0" name="GetYearsResult" nillable="true" type="q32:ArrayOfYears" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="WriteDivision">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="RequestByIP" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="AuthenticationCode" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="DivisionID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Description" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ModifiedBy" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Active" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="WriteDivisionResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="WriteDivisionResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="WriteMajor">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="RequestByIP" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="AuthenticationCode" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="MajorID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Description" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ModifiedBy" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Active" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="WriteMajorResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="WriteMajorResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="WriteMemberRole">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="RequestByIP" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="AuthenticationCode" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="MemberRoleID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Description" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ModifiedBy" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Active" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="WriteMemberRoleResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="WriteMemberRoleResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="WriteMember">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="RequestByIP" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="AuthenticationCode" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="MemberID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="LoginID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Password" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="FullName" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ImageLocation" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ContactInfo" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Email" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="AuthenticationID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="MemberRoleID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ModifiedBy" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Active" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="WriteMemberResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="WriteMemberResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="WriteMemberPermission">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="RequestByIP" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="AuthenticationCode" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="MemberPermissionID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="MemberRoleID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="PermissionMasterID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="PermissionName" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Allowed" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ModifiedBy" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Active" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="WriteMemberPermissionResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="WriteMemberPermissionResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="WriteApproveType">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="RequestByIP" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="AuthenticationCode" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ApproveTypeID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Description" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ModifiedBy" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Active" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="WriteApproveTypeResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="WriteApproveTypeResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="WriteAttendanceStatus">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="RequestByIP" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="AuthenticationCode" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="AttendanceStatusID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Description" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ModifiedBy" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Active" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="WriteAttendanceStatusResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="WriteAttendanceStatusResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="WriteAuthentication">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="RequestByIP" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="AuthenticationCode" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="AuthenticationKey" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="SuccessCount" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ErrorCount" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Active" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="WriteAuthenticationResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="WriteAuthenticationResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="WriteClass">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="RequestByIP" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="AuthenticationCode" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ClassID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Description" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="MajorID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="YearID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ModifiedBy" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Active" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="WriteClassResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="WriteClassResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="WriteDailyAttadance">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="RequestByIP" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="AuthenticationCode" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="DailyAttadanceID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="AttDateTime" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="StudentID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="TimeTableObjectID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="SemesterID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="AttendanceStatusID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ModifiedBy" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Active" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="WriteDailyAttadanceResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="WriteDailyAttadanceResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="WriteDayInWeek">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="RequestByIP" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="AuthenticationCode" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="DayInWeekID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Description" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ModifiedBy" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Active" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="WriteDayInWeekResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="WriteDayInWeekResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="WriteDepartment">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="RequestByIP" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="AuthenticationCode" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="DepartmentID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Description" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ModifiedBy" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Active" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="WriteDepartmentResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="WriteDepartmentResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="WriteHolidayType">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="RequestByIP" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="AuthenticationCode" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="HolidayTypeID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Description" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ModifiedBy" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Active" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="WriteHolidayTypeResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="WriteHolidayTypeResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="WriteMonthlyAttadance">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="RequestByIP" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="AuthenticationCode" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="MonthlyAttadanceID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="AttDateTime" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="StudentID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="SemesterID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="CurrentAttandancePercent" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="NumberOfAttandance" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="NumberOfAbsent" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Description" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Active" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="WriteMonthlyAttadanceResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="WriteMonthlyAttadanceResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="WritePermissionMaster">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="RequestByIP" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="AuthenticationCode" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="PermissionMasterID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Value" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ParentID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ModifiedBy" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Active" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="WritePermissionMasterResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="WritePermissionMasterResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="WriteRequestList">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="RequestByIP" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="AuthenticationCode" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="RequestListID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="RequestByHostName" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="MachineKey" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="MACAddress" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="StudentID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="MemberID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="LastRequestedDateTime" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="RequestedCount" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Description" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Active" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="WriteRequestListResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="WriteRequestListResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="WriteRoom">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="RequestByIP" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="AuthenticationCode" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="RoomID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="RoomCode" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="AccessRightCode" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="North_Lattitude" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="North_Longtitude" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="South_Lattitude" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="South_Longtitude" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="East_Lattitude" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="East_Longtitude" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="West_Lattitude" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="West_Longtitude" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Description" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ModifiedBy" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Active" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="WriteRoomResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="WriteRoomResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="WriteStudent">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="RequestByIP" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="AuthenticationCode" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="StudentID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="LoginID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Password" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="FullName" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="StudentCode" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ImageLocation" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Email" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="MajorID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ContactInfo" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="AuthenticationID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ClassID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ModifiedBy" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Active" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="WriteStudentResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="WriteStudentResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="WriteSubject">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="RequestByIP" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="AuthenticationCode" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="SubjectID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="SubjectCode" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="SubjectTypeID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="MajorID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="SemesterID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="YearsID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Description" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ModifiedBy" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Active" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="WriteSubjectResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="WriteSubjectResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="WriteSubjectType">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="RequestByIP" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="AuthenticationCode" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="SubjectTypeID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Description" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ModifiedBy" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Active" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="WriteSubjectTypeResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="WriteSubjectTypeResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="WriteTeacher">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="RequestByIP" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="AuthenticationCode" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="TeacherID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="DepartmentID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Email" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="AuthenticateID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ModifiedBy" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Active" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="WriteTeacherResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="WriteTeacherResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="WriteTimePeriod">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="RequestByIP" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="AuthenticationCode" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="TimePeriodID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="FromTime" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ToTime" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Description" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ModifiedBy" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Active" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="WriteTimePeriodResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="WriteTimePeriodResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="WriteTimeTableObject">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="RequestByIP" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="AuthenticationCode" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="TimeTableObjectID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ClassID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="DayInWeekID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="TimePeriodID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="SubjectID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="TeacherID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="RoomID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="SemesterID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Description" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ModifiedBy" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Active" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="WriteTimeTableObjectResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="WriteTimeTableObjectResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="WriteTownship">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="RequestByIP" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="AuthenticationCode" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="TownshipID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="DivisionID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Description" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ModifiedBy" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Active" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="WriteTownshipResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="WriteTownshipResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="WriteUnabilableApproveList">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="RequestByIP" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="AuthenticationCode" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="UnabilableApproveListID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="AttDateTime" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="RequestListID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="DailyAttadanceScheduleID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Description" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ModifiedBy" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Active" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="WriteUnabilableApproveListResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="WriteUnabilableApproveListResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="WriteYearlyAttadance">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="RequestByIP" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="AuthenticationCode" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="YearlyAttadanceID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="AttDateTime" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="StudentID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="SemesterID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="CurrentAttandancePercent" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="NumberOfAttandance" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="NumberOfAbsent" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Description" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Active" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="WriteYearlyAttadanceResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="WriteYearlyAttadanceResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="WriteYear">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="RequestByIP" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="AuthenticationCode" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="YearID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Description" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ModifiedBy" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Active" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="WriteYearResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="WriteYearResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetFullTownship">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="RequestByIP" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="AuthenticationCode" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="TownshipID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Description" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="DivisionID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="DivisionName" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Active" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetFullTownshipResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetFullTownshipResult" nillable="true">
+          <xs:complexType>
+            <xs:annotation>
+              <xs:appinfo>
+                <ActualType Name="DataTable" Namespace="http://schemas.datacontract.org/2004/07/System.Data" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+              </xs:appinfo>
+            </xs:annotation>
+            <xs:sequence>
+              <xs:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+              <xs:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetFullClass">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="RequestByIP" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="AuthenticationCode" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ClassID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Description" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="MajorID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="YearsID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="YearsName" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Active" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetFullClassResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetFullClassResult" nillable="true">
+          <xs:complexType>
+            <xs:annotation>
+              <xs:appinfo>
+                <ActualType Name="DataTable" Namespace="http://schemas.datacontract.org/2004/07/System.Data" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+              </xs:appinfo>
+            </xs:annotation>
+            <xs:sequence>
+              <xs:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+              <xs:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetFullHolidaySchedule">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="RequestByIP" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="AuthenticationCode" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="HolidayScheduleID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="FromTime" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ToTime" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="HolidayTypeID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="HolidayTypeName" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Active" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetFullHolidayScheduleResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetFullHolidayScheduleResult" nillable="true">
+          <xs:complexType>
+            <xs:annotation>
+              <xs:appinfo>
+                <ActualType Name="DataTable" Namespace="http://schemas.datacontract.org/2004/07/System.Data" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+              </xs:appinfo>
+            </xs:annotation>
+            <xs:sequence>
+              <xs:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+              <xs:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetFullDailyAttadanceSchedule">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="RequestByIP" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="AuthenticationCode" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="AttDateTime" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="StudentID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="TimeTableObjectID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="SemesterID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="AttendanceStatusID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Active" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetFullDailyAttadanceScheduleResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetFullDailyAttadanceScheduleResult" nillable="true">
+          <xs:complexType>
+            <xs:annotation>
+              <xs:appinfo>
+                <ActualType Name="DataTable" Namespace="http://schemas.datacontract.org/2004/07/System.Data" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+              </xs:appinfo>
+            </xs:annotation>
+            <xs:sequence>
+              <xs:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+              <xs:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetFullMember">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="RequestByIP" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="AuthenticationCode" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="MemberID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="LoginID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Password" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="FullName" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ContactInfo" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="MemberRoleID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="AuthenticationID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="AuthenticationKey" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Active" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetFullMemberResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetFullMemberResult" nillable="true">
+          <xs:complexType>
+            <xs:annotation>
+              <xs:appinfo>
+                <ActualType Name="DataTable" Namespace="http://schemas.datacontract.org/2004/07/System.Data" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+              </xs:appinfo>
+            </xs:annotation>
+            <xs:sequence>
+              <xs:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+              <xs:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetFullStudent">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="RequestByIP" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="AuthenticationCode" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="StudentID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="LoginID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Password" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="FullName" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="MajorID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ContactInfo" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ClassID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="AuthenticationID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="AuthenticationKey" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Active" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetFullStudentResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetFullStudentResult" nillable="true">
+          <xs:complexType>
+            <xs:annotation>
+              <xs:appinfo>
+                <ActualType Name="DataTable" Namespace="http://schemas.datacontract.org/2004/07/System.Data" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+              </xs:appinfo>
+            </xs:annotation>
+            <xs:sequence>
+              <xs:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+              <xs:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetFullSubject">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="RequestByIP" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="AuthenticationCode" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="SubjectID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="SubjectCode" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="SubjectTypeID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="SemesterID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="MajorID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="YearsID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Active" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetFullSubjectResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetFullSubjectResult" nillable="true">
+          <xs:complexType>
+            <xs:annotation>
+              <xs:appinfo>
+                <ActualType Name="DataTable" Namespace="http://schemas.datacontract.org/2004/07/System.Data" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+              </xs:appinfo>
+            </xs:annotation>
+            <xs:sequence>
+              <xs:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+              <xs:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetFullTeacher">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="RequestByIP" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="AuthenticationCode" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="TeacherID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="DepartmentID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="AuthenticationID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="AuthenticationKey" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Active" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetFullTeacherResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetFullTeacherResult" nillable="true">
+          <xs:complexType>
+            <xs:annotation>
+              <xs:appinfo>
+                <ActualType Name="DataTable" Namespace="http://schemas.datacontract.org/2004/07/System.Data" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+              </xs:appinfo>
+            </xs:annotation>
+            <xs:sequence>
+              <xs:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+              <xs:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetFullMonthlyAttadanceSchedule">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="RequestByIP" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="AuthenticationCode" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="AttDateTime" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="StudentID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="StudentLoginID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="SemesterID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="MinCurrentAttandancePercent" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="NumberOfAttandance" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="NumberOfAbsent" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Active" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetFullMonthlyAttadanceScheduleResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetFullMonthlyAttadanceScheduleResult" nillable="true">
+          <xs:complexType>
+            <xs:annotation>
+              <xs:appinfo>
+                <ActualType Name="DataTable" Namespace="http://schemas.datacontract.org/2004/07/System.Data" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+              </xs:appinfo>
+            </xs:annotation>
+            <xs:sequence>
+              <xs:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+              <xs:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetFullYearlyAttadanceSchedule">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="RequestByIP" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="AuthenticationCode" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="AttDateTime" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="StudentID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="StudentLoginID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="SemesterID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="MinCurrentAttandancePercent" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="NumberOfAttandance" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="NumberOfAbsent" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Active" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetFullYearlyAttadanceScheduleResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetFullYearlyAttadanceScheduleResult" nillable="true">
+          <xs:complexType>
+            <xs:annotation>
+              <xs:appinfo>
+                <ActualType Name="DataTable" Namespace="http://schemas.datacontract.org/2004/07/System.Data" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+              </xs:appinfo>
+            </xs:annotation>
+            <xs:sequence>
+              <xs:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+              <xs:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetFullRequestedList">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="RequestByIP" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="AuthenticationCode" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="RequestedListID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="RequestByHostName" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="MachineKey" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="MACAddress" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="StudentID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="StudentLoginID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="MemberID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="LastRequestedDateTime" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="RequestedCount" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Active" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetFullRequestedListResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetFullRequestedListResult" nillable="true">
+          <xs:complexType>
+            <xs:annotation>
+              <xs:appinfo>
+                <ActualType Name="DataTable" Namespace="http://schemas.datacontract.org/2004/07/System.Data" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+              </xs:appinfo>
+            </xs:annotation>
+            <xs:sequence>
+              <xs:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+              <xs:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetFullUnabilableApproveList">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="RequestByIP" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="AuthenticationCode" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="AttDateTime" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="RequestListID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="StudentID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="DailyAttadanceScheduleID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Approved" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Active" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetFullUnabilableApproveListResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetFullUnabilableApproveListResult" nillable="true">
+          <xs:complexType>
+            <xs:annotation>
+              <xs:appinfo>
+                <ActualType Name="DataTable" Namespace="http://schemas.datacontract.org/2004/07/System.Data" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+              </xs:appinfo>
+            </xs:annotation>
+            <xs:sequence>
+              <xs:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+              <xs:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetFullTimeTableObject">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="RequestByIP" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="AuthenticationCode" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ClassID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="DayInWeekID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="TimePeriodID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="SubjectID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="TeacherID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="RoomID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="SemesterID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Active" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetFullTimeTableObjectResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetFullTimeTableObjectResult" nillable="true">
+          <xs:complexType>
+            <xs:annotation>
+              <xs:appinfo>
+                <ActualType Name="DataTable" Namespace="http://schemas.datacontract.org/2004/07/System.Data" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+              </xs:appinfo>
+            </xs:annotation>
+            <xs:sequence>
+              <xs:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+              <xs:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
